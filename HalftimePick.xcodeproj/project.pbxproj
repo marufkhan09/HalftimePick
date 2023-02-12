@@ -16,6 +16,12 @@
 		CABEF2A82998CEFA00751299 /* HalftimePickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2A72998CEFA00751299 /* HalftimePickTests.swift */; };
 		CABEF2B22998CEFA00751299 /* HalftimePickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2B12998CEFA00751299 /* HalftimePickUITests.swift */; };
 		CABEF2B42998CEFA00751299 /* HalftimePickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2B32998CEFA00751299 /* HalftimePickUITestsLaunchTests.swift */; };
+		CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2C22998E87B00751299 /* TabBarController.swift */; };
+		CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2C62998EB5B00751299 /* HomeViewController.swift */; };
+		CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CA2998EBB000751299 /* NewsViewController.swift */; };
+		CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */; };
+		CABEF2D02999048C00751299 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CF2999048C00751299 /* PickViewController.swift */; };
+		CABEF2D3299909BD00751299 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D2299909BD00751299 /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		CABEF2AD2998CEFA00751299 /* HalftimePickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalftimePickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABEF2B12998CEFA00751299 /* HalftimePickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalftimePickUITests.swift; sourceTree = "<group>"; };
 		CABEF2B32998CEFA00751299 /* HalftimePickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalftimePickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CABEF2C22998E87B00751299 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CABEF2C62998EB5B00751299 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CABEF2CA2998EBB000751299 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		CABEF2CF2999048C00751299 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
+		CABEF2D2299909BD00751299 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,9 @@
 		CABEF28F2998CEF900751299 /* HalftimePick */ = {
 			isa = PBXGroup;
 			children = (
-				CABEF2902998CEF900751299 /* AppDelegate.swift */,
-				CABEF2922998CEF900751299 /* SceneDelegate.swift */,
-				CABEF2942998CEF900751299 /* ViewController.swift */,
+				CABEF2D1299909A100751299 /* Extentions */,
+				CABEF2C42998EB0C00751299 /* Controller */,
+				CABEF2C02998CF0000751299 /* App */,
 				CABEF2962998CEF900751299 /* Main.storyboard */,
 				CABEF2992998CEFA00751299 /* Assets.xcassets */,
 				CABEF29B2998CEFA00751299 /* LaunchScreen.storyboard */,
@@ -125,6 +137,76 @@
 				CABEF2B32998CEFA00751299 /* HalftimePickUITestsLaunchTests.swift */,
 			);
 			path = HalftimePickUITests;
+			sourceTree = "<group>";
+		};
+		CABEF2C02998CF0000751299 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2902998CEF900751299 /* AppDelegate.swift */,
+				CABEF2922998CEF900751299 /* SceneDelegate.swift */,
+				CABEF2942998CEF900751299 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CABEF2C12998E83900751299 /* Home TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2C22998E87B00751299 /* TabBarController.swift */,
+			);
+			path = "Home TabBar";
+			sourceTree = "<group>";
+		};
+		CABEF2C42998EB0C00751299 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2CE2999046E00751299 /* PickController */,
+				CABEF2C92998EB8E00751299 /* Score */,
+				CABEF2C82998EB8400751299 /* News */,
+				CABEF2C52998EB1A00751299 /* Home */,
+				CABEF2C12998E83900751299 /* Home TabBar */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CABEF2C52998EB1A00751299 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2C62998EB5B00751299 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CABEF2C82998EB8400751299 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2CA2998EBB000751299 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CABEF2C92998EB8E00751299 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		CABEF2CE2999046E00751299 /* PickController */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2CF2999048C00751299 /* PickViewController.swift */,
+			);
+			path = PickController;
+			sourceTree = "<group>";
+		};
+		CABEF2D1299909A100751299 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CABEF2D2299909BD00751299 /* HexColor.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +340,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */,
+				CABEF2D02999048C00751299 /* PickViewController.swift in Sources */,
+				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
 				CABEF2952998CEF900751299 /* ViewController.swift in Sources */,
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,
+				CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */,
+				CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */,
+				CABEF2D3299909BD00751299 /* HexColor.swift in Sources */,
 				CABEF2932998CEF900751299 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +530,6 @@
 				INFOPLIST_FILE = HalftimePick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +557,6 @@
 				INFOPLIST_FILE = HalftimePick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
