@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1C51A8299A3FB10090A980 /* navbarbackground.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1C51A7299A3FB10090A980 /* navbarbackground.xib */; };
+		CA1C51AA299A40320090A980 /* navbarbackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C51A9299A40320090A980 /* navbarbackground.swift */; };
+		CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */; };
+		CAAE6E95299B75F800BC6EF2 /* gamelistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */; };
 		CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2902998CEF900751299 /* AppDelegate.swift */; };
 		CABEF2932998CEF900751299 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2922998CEF900751299 /* SceneDelegate.swift */; };
 		CABEF2952998CEF900751299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2942998CEF900751299 /* ViewController.swift */; };
@@ -21,7 +25,7 @@
 		CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CA2998EBB000751299 /* NewsViewController.swift */; };
 		CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */; };
 		CABEF2D02999048C00751299 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CF2999048C00751299 /* PickViewController.swift */; };
-		CABEF2D3299909BD00751299 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D2299909BD00751299 /* HexColor.swift */; };
+		CABEF2D529996E5700751299 /* appbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D429996E5700751299 /* appbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA1C51A7299A3FB10090A980 /* navbarbackground.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = navbarbackground.xib; sourceTree = "<group>"; };
+		CA1C51A9299A40320090A980 /* navbarbackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navbarbackground.swift; sourceTree = "<group>"; };
+		CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamelistTableViewCell.swift; sourceTree = "<group>"; };
+		CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gamelistTableViewCell.xib; sourceTree = "<group>"; };
 		CABEF28D2998CEF900751299 /* HalftimePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalftimePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABEF2902998CEF900751299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CABEF2922998CEF900751299 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +68,7 @@
 		CABEF2CA2998EBB000751299 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CABEF2CF2999048C00751299 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
-		CABEF2D2299909BD00751299 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		CABEF2D429996E5700751299 /* appbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				CABEF2C62998EB5B00751299 /* HomeViewController.swift */,
+				CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */,
+				CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -204,7 +214,9 @@
 		CABEF2D1299909A100751299 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				CABEF2D2299909BD00751299 /* HexColor.swift */,
+				CABEF2D429996E5700751299 /* appbar.swift */,
+				CA1C51A7299A3FB10090A980 /* navbarbackground.xib */,
+				CA1C51A9299A40320090A980 /* navbarbackground.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -313,6 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1C51A8299A3FB10090A980 /* navbarbackground.xib in Resources */,
+				CAAE6E95299B75F800BC6EF2 /* gamelistTableViewCell.xib in Resources */,
 				CABEF29D2998CEFA00751299 /* LaunchScreen.storyboard in Resources */,
 				CABEF29A2998CEFA00751299 /* Assets.xcassets in Resources */,
 				CABEF2982998CEF900751299 /* Main.storyboard in Resources */,
@@ -343,12 +357,14 @@
 				CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */,
 				CABEF2D02999048C00751299 /* PickViewController.swift in Sources */,
 				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
+				CABEF2D529996E5700751299 /* appbar.swift in Sources */,
+				CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */,
 				CABEF2952998CEF900751299 /* ViewController.swift in Sources */,
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,
 				CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */,
 				CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */,
-				CABEF2D3299909BD00751299 /* HexColor.swift in Sources */,
 				CABEF2932998CEF900751299 /* SceneDelegate.swift in Sources */,
+				CA1C51AA299A40320090A980 /* navbarbackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
