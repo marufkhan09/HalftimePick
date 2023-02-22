@@ -74,6 +74,14 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let sportsController = storyBoard.instantiateViewController(withIdentifier: "sportsController") as! SportsDetailViewController
+//
+//        self.present(sportsController, animated:true, completion:nil)
+      
+        let newViewController = SportsDetailViewController()
+        self.navigationController?.pushViewController(newViewController, animated: true)
+      
     }
 }
 

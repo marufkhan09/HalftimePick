@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,6 +23,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="95" y="-2"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="dAn-IT-reQ">
+            <objects>
+                <viewController id="JMC-9S-B1H" customClass="ScoreViewController" customModule="HalftimePick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u6D-RG-7Ss">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7A-Kx-w64" customClass="CustomSegmentedControl" customModule="HalftimePick" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="718" width="393" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9JL-To-6KL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i2b-1e-rBy"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i2b-1e-rBy" firstAttribute="trailing" secondItem="A7A-Kx-w64" secondAttribute="trailing" id="JAY-Eb-3yL"/>
+                            <constraint firstItem="i2b-1e-rBy" firstAttribute="bottom" secondItem="A7A-Kx-w64" secondAttribute="bottom" constant="50" id="UNJ-Dv-HT7"/>
+                            <constraint firstItem="A7A-Kx-w64" firstAttribute="leading" secondItem="i2b-1e-rBy" secondAttribute="leading" id="kGF-se-WFc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="interfaceSegmented" destination="A7A-Kx-w64" id="YHD-gr-xNh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcy-Gg-qjw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="-12"/>
+        </scene>
+        <!--Sports Detail View Controller-->
+        <scene sceneID="YCA-s7-gsR">
+            <objects>
+                <viewController storyboardIdentifier="sportsController" id="Xlc-7N-zar" customClass="SportsDetailViewController" customModule="HalftimePick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAR-58-OBF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nkG-7D-sI0">
+                                <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oTF-gb-k5W"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="2" id="Os4-GT-bzb">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="estimatedItemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="10" maxX="2" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sportsNameCell" id="Pxz-21-8l7" customClass="SportsNameCell">
+                                        <rect key="frame" x="2" y="10" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5V8-CX-4uQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="50" height="50"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7kB-HK-25C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7kB-HK-25C" firstAttribute="trailing" secondItem="nkG-7D-sI0" secondAttribute="trailing" id="VdS-df-0kP"/>
+                            <constraint firstItem="nkG-7D-sI0" firstAttribute="leading" secondItem="7kB-HK-25C" secondAttribute="leading" id="f1s-cO-Vxn"/>
+                            <constraint firstItem="nkG-7D-sI0" firstAttribute="top" secondItem="7kB-HK-25C" secondAttribute="top" id="luD-dh-du9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tHt-bJ-ov9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KvA-RP-5tI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2991.6030534351144" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>

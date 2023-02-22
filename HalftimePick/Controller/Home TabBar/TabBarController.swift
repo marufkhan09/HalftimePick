@@ -26,6 +26,7 @@ class TabBarController: UITabBarController {
         let vc3 = UINavigationController(rootViewController: ScoreViewController())
         let vc4 = UINavigationController(rootViewController: PickViewController())
         
+        
         vc1.tabBarItem.image = UIImage(named: "Home")
         vc2.tabBarItem.image = UIImage(named: "News")
         vc3.tabBarItem.image = UIImage(named: "1:2")

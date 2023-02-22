@@ -13,6 +13,7 @@
 		CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6DFE299CAC6C0002DC30 /* HomeModel.swift */; };
 		CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */; };
 		CA7D6E03299CF7E20002DC30 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */; };
+		CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */; };
 		CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */; };
 		CAAE6E95299B75F800BC6EF2 /* gamelistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */; };
 		CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2902998CEF900751299 /* AppDelegate.swift */; };
@@ -30,6 +31,9 @@
 		CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */; };
 		CABEF2D02999048C00751299 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CF2999048C00751299 /* PickViewController.swift */; };
 		CABEF2D529996E5700751299 /* appbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D429996E5700751299 /* appbar.swift */; };
+		CABF198C29A5E4BC0048BE2C /* SportsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */; };
+		CABF199329A631D10048BE2C /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF199129A631D10048BE2C /* SportsCollectionViewCell.swift */; };
+		CABF199429A631D10048BE2C /* SportsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABF199229A631D10048BE2C /* SportsCollectionViewCell.xib */; };
 		FE96923252EBF7E8AB32AE8C /* Pods_HalftimePick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,7 @@
 		CA7D6DFE299CAC6C0002DC30 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
+		CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamelistTableViewCell.swift; sourceTree = "<group>"; };
 		CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gamelistTableViewCell.xib; sourceTree = "<group>"; };
 		CABEF28D2998CEF900751299 /* HalftimePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalftimePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +85,9 @@
 		CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CABEF2CF2999048C00751299 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		CABEF2D429996E5700751299 /* appbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appbar.swift; sourceTree = "<group>"; };
+		CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsDetailViewController.swift; sourceTree = "<group>"; };
+		CABF199129A631D10048BE2C /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CABF199229A631D10048BE2C /* SportsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsCollectionViewCell.xib; sourceTree = "<group>"; };
 		CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalftimePick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA659E1492EE1FD6ACD14A1D /* Pods-HalftimePickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePickTests.debug.xcconfig"; path = "Target Support Files/Pods-HalftimePickTests/Pods-HalftimePickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFEC1DB6DDF9CF965317D46 /* Pods-HalftimePick-HalftimePickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePick-HalftimePickUITests.release.xcconfig"; path = "Target Support Files/Pods-HalftimePick-HalftimePickUITests/Pods-HalftimePick-HalftimePickUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 		CABEF2C42998EB0C00751299 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CABF198A29A5E48E0048BE2C /* SportsDetail */,
 				CABEF2CE2999046E00751299 /* PickController */,
 				CABEF2C92998EB8E00751299 /* Score */,
 				CABEF2C82998EB8400751299 /* News */,
@@ -237,6 +246,7 @@
 		CABEF2C92998EB8E00751299 /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */,
 				CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */,
 				CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */,
 				CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */,
@@ -258,6 +268,16 @@
 				CABEF2D429996E5700751299 /* appbar.swift */,
 			);
 			path = Customviews;
+			sourceTree = "<group>";
+		};
+		CABF198A29A5E48E0048BE2C /* SportsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */,
+				CABF199129A631D10048BE2C /* SportsCollectionViewCell.swift */,
+				CABF199229A631D10048BE2C /* SportsCollectionViewCell.xib */,
+			);
+			path = SportsDetail;
 			sourceTree = "<group>";
 		};
 		CEE14FC57C4BD9F2AB3E8386 /* Pods */ = {
@@ -397,6 +417,7 @@
 				CABEF29D2998CEFA00751299 /* LaunchScreen.storyboard in Resources */,
 				CABEF29A2998CEFA00751299 /* Assets.xcassets in Resources */,
 				CABEF2982998CEF900751299 /* Main.storyboard in Resources */,
+				CABF199429A631D10048BE2C /* SportsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,10 +550,13 @@
 				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
 				CABEF2D529996E5700751299 /* appbar.swift in Sources */,
 				CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */,
+				CABF198C29A5E4BC0048BE2C /* SportsDetailViewController.swift in Sources */,
 				CA7D6DFC299CAC1D0002DC30 /* homeApi.swift in Sources */,
 				CABEF2952998CEF900751299 /* ViewController.swift in Sources */,
+				CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */,
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,
 				CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */,
+				CABF199329A631D10048BE2C /* SportsCollectionViewCell.swift in Sources */,
 				CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */,
 				CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */,
 				CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */,

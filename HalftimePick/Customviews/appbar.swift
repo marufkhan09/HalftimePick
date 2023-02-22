@@ -12,9 +12,15 @@ extension UIViewController {
     
     func newsNavBar(_ target: UIViewController, leftAcion: Selector, rightAction: Selector) {
         let appearance = UINavigationBarAppearance()
+       
         appearance.backgroundColor = UIColor(red: 0.11, green: 0.19, blue: 0.32, alpha: 1.00)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.layer.cornerRadius=25;
+        navigationController?.navigationBar.clipsToBounds = true;
+//    let height: CGFloat = 100
+//        let bounds = self.navigationController!.navigationBar.bounds
+//           self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height + height)
         
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.standardAppearance = appearance
