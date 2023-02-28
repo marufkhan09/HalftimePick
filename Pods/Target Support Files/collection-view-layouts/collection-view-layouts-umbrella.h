@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double CollectionViewWaterfallLayoutVersionNumber;
-FOUNDATION_EXPORT const unsigned char CollectionViewWaterfallLayoutVersionString[];
+FOUNDATION_EXPORT double collection_view_layoutsVersionNumber;
+FOUNDATION_EXPORT const unsigned char collection_view_layoutsVersionString[];
 

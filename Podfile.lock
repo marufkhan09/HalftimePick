@@ -1,24 +1,26 @@
 PODS:
   - Alamofire (5.6.4)
-  - CollectionViewWaterfallLayout (0.5.0)
+  - collection-view-layouts/Core (0.2.2)
+  - collection-view-layouts/FlickrLayout (0.2.2):
+    - collection-view-layouts/Core
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
-  - CollectionViewWaterfallLayout
+  - collection-view-layouts/FlickrLayout
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - CollectionViewWaterfallLayout
+    - collection-view-layouts
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  CollectionViewWaterfallLayout: 4399ba01be265fff4da1ed1d607130fe009780e4
+  collection-view-layouts: 474ec4cce601a26247737227a97fa6a4eb30213f
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 3531daad9edc22d66cee9102222941eb8f1c287b
+PODFILE CHECKSUM: 87f2c2902778a790373c0240b6cacfcc6af50cfd
 
 COCOAPODS: 1.11.3

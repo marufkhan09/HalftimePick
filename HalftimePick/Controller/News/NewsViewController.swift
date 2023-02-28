@@ -9,10 +9,19 @@ import UIKit
 
 class NewsViewController: UIViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        newsNavBar(SportsDetailViewController(), leftAcion: #selector(receivedMsg), rightAction: #selector(receivedMsg))
+        view.backgroundColor = .black
+        
+    }
+    
     override func viewDidLoad() {
+    
         super.viewDidLoad()
-        view.backgroundColor = .green
-        // Do any additional setup after loading the view.
+    }
+    
+    @objc func receivedMsg() {
+        print("MSG Received")
     }
     
 

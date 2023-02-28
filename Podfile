@@ -8,7 +8,7 @@ target 'HalftimePick' do
   # Pods for HalftimePick
 pod 'Alamofire'
 pod 'SwiftyJSON'
-pod 'CollectionViewWaterfallLayout'
+pod 'collection-view-layouts/FlickrLayout'
 
   target 'HalftimePickTests' do
     inherit! :search_paths

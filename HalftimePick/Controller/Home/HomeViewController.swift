@@ -57,10 +57,11 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! gamelistTableViewCell
         cell.selectionStyle = .none
-        cell.cellTitle.text = "\(indexPath.row+1)"
-        cell.gameImage.image = UIImage(named: "logo")
+        cell.cellTitle.text = "NCAAF FOOTBALL \(indexPath.row+1)"
+        cell.gameImage.image = UIImage(named: "nfl")
         cell.gameImage.backgroundColor = .white
-        cell.gameImage.maskCircle(anyImage: UIImage(named: "Home")!)
+        cell.gameImage.backgroundColor =  UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
+//        cell.gameImage.maskCircle(anyImage: UIImage(named: "nfl")!)
         //var content = cell.defaultContentConfiguration()
         //   content.image = UIImage(systemName: "star")
         //content.text = "Cell \(indexPath.row+1)"
@@ -89,8 +90,9 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
 extension UIImageView {
   public func maskCircle(anyImage: UIImage) {
       self.contentMode = UIView.ContentMode.scaleAspectFit
-      self.layer.cornerRadius = self.frame.height/3
-    self.layer.masksToBounds = false
+      self.layer.cornerRadius = self.frame.height
+      //self.layer.cornerRadius =  bounds.height / 2
+self.layer.masksToBounds = false
     self.clipsToBounds = true
 
    // make square(* must to make circle),

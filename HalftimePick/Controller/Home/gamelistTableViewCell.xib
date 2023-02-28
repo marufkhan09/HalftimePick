@@ -21,9 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKZ-1v-d8b">
-                                <rect key="frame" x="8" y="25" width="30" height="30"/>
+                                <rect key="frame" x="8" y="20" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="9ks-uF-S22"/>
+                                    <constraint firstAttribute="width" constant="40" id="9ks-uF-S22"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowright" translatesAutoresizingMaskIntoConstraints="NO" id="MQq-YB-f7O">
@@ -43,9 +43,9 @@
                         <constraints>
                             <constraint firstItem="MQq-YB-f7O" firstAttribute="trailing" secondItem="Bqr-Oq-hZL" secondAttribute="trailingMargin" id="5bo-Q9-daY"/>
                             <constraint firstItem="uKZ-1v-d8b" firstAttribute="centerY" secondItem="Bqr-Oq-hZL" secondAttribute="centerY" id="8Yy-Gl-mIU"/>
-                            <constraint firstItem="uKZ-1v-d8b" firstAttribute="top" secondItem="Bqr-Oq-hZL" secondAttribute="top" constant="25" id="JB6-Zq-vaw"/>
+                            <constraint firstItem="uKZ-1v-d8b" firstAttribute="top" secondItem="Bqr-Oq-hZL" secondAttribute="top" constant="20" id="JB6-Zq-vaw"/>
                             <constraint firstItem="Ab1-kU-1uO" firstAttribute="centerY" secondItem="Bqr-Oq-hZL" secondAttribute="centerY" id="Piy-Cp-bkS"/>
-                            <constraint firstItem="Ab1-kU-1uO" firstAttribute="leading" secondItem="uKZ-1v-d8b" secondAttribute="trailing" constant="21" id="pBn-9p-Zs9"/>
+                            <constraint firstItem="Ab1-kU-1uO" firstAttribute="leading" secondItem="uKZ-1v-d8b" secondAttribute="trailing" constant="11" id="pBn-9p-Zs9"/>
                             <constraint firstItem="MQq-YB-f7O" firstAttribute="centerY" secondItem="Bqr-Oq-hZL" secondAttribute="centerY" id="pXb-Bq-6m2"/>
                             <constraint firstItem="uKZ-1v-d8b" firstAttribute="leading" secondItem="Bqr-Oq-hZL" secondAttribute="leadingMargin" id="v59-sd-0yC"/>
                         </constraints>

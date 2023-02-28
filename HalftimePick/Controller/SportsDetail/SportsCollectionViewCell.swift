@@ -2,16 +2,41 @@
 //  SportsCollectionViewCell.swift
 //  HalftimePick
 //
-//  Created by Maruf Khan on 22/2/23.
+//  Created by Maruf Khan on 28/2/23.
 //
 
 import UIKit
 
 class SportsCollectionViewCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    static let identifier = "SportsCollectionViewCell"
+    
+    private let imageview : UIImageView = {
+        let imageview = UIImageView()
+        imageview.contentMode = .scaleAspectFit
+        return imageview
+    }()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        contentView.addSubview(imageview)
+        contentView.clipsToBounds = true
     }
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(with image: UIImage?){
+        imageview.image = image
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageview.frame = contentView.bounds
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageview.image = nil
+    }
+    
 }

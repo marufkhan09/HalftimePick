@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79AB4C2480419605A17F9288AAB7AAF0"
-               BuildableName = "CollectionViewWaterfallLayout.framework"
-               BlueprintName = "CollectionViewWaterfallLayout"
+               BlueprintIdentifier = "2EFD58B399B7EB524C0AEE681F8D15C8"
+               BuildableName = "collection_view_layouts.framework"
+               BlueprintName = "collection-view-layouts"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
