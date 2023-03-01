@@ -20,13 +20,21 @@ class ScoreTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    scorecardview.backgroundColor = UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
+        scorecardview.backgroundColor = UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
+        //        team1img.clipsToBounds = true
+        //        team2img.clipsToBounds = true
+        //        team1img.contentMode = .scaleAspectFit
+        //        team2img.contentMode = .scaleAspectFit
+        //        team1img.backgroundColor = UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
+        //        team2img.backgroundColor = UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
         // Initialization code
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+        team1img.layer.cornerRadius = bounds.height / 2
+        team2img.layer.cornerRadius = bounds.height / 2
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -16,7 +16,7 @@ class SportsDetailViewController: UIViewController, UICollectionViewDelegate, UI
       guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SportsCollectionViewCell.identifier, for: indexPath) as? SportsCollectionViewCell else {
             fatalError()
         }
-        cell.configure(with: UIImage(named: "screenSplash"))
+        cell.configure(with: UIImage(named: "demopic"))
         return cell
     }
     
@@ -34,12 +34,12 @@ class SportsDetailViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func setupCollectionView(){
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: view.frame.size.width/3, height: view.frame.size.height/4)
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
-        collectionView = UICollectionView(frame: .zero,collectionViewLayout: layout)
-        collectionView?.backgroundColor = .orange
+//        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: view.frame.size.width/3, height: view.frame.size.height/4)
+//        layout.minimumLineSpacing = 0
+//        layout.minimumInteritemSpacing = 0
+        collectionView = UICollectionView(frame: .zero,collectionViewLayout: SportsDetailViewController.createLayout())
+        collectionView?.backgroundColor = .black
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView?.register(SportsCollectionViewCell.self, forCellWithReuseIdentifier: SportsCollectionViewCell.identifier)
@@ -54,4 +54,31 @@ class SportsDetailViewController: UIViewController, UICollectionViewDelegate, UI
         print("MSG Received")
     }
     
+    
+    static func createLayout() -> UICollectionViewCompositionalLayout{
+        //items
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+        
+        let verticalStackItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+        
+        
+        let verticalStackGroup = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1)), subitem: verticalStackItem, count: 2)
+        //group
+        
+        
+//        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(2/5)), subitem: item, count: 1)
+        
+        
+        
+        
+      
+        //section
+        
+        let section = NSCollectionLayoutSection(group: group)
+        //return
+        
+      return  UICollectionViewCompositionalLayout(section: section)
+    }
 }

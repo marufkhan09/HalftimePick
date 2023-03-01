@@ -27,7 +27,8 @@ class SportsCollectionViewCell: UICollectionViewCell {
     
     func configure(with image: UIImage?){
         imageview.image = image
-    }
+        imageview.clipsToBounds = true
+        imageview.contentMode = UIView.ContentMode.scaleAspectFit    }
     
     override func layoutSubviews() {
         super.layoutSubviews()

@@ -33,9 +33,6 @@
 		CABEF2D529996E5700751299 /* appbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D429996E5700751299 /* appbar.swift */; };
 		CABF198C29A5E4BC0048BE2C /* SportsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */; };
 		CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */; };
-		CADFD29B29AE66F000BE2C57 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29A29AE66F000BE2C57 /* CollectionViewProvider.swift */; };
-		CADFD29D29AE67C600BE2C57 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29C29AE67C600BE2C57 /* Font.swift */; };
-		CADFD29F29AE67D100BE2C57 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29E29AE67D100BE2C57 /* Color.swift */; };
 		FE96923252EBF7E8AB32AE8C /* Pods_HalftimePick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,9 +86,6 @@
 		CABEF2D429996E5700751299 /* appbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appbar.swift; sourceTree = "<group>"; };
 		CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsDetailViewController.swift; sourceTree = "<group>"; };
 		CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
-		CADFD29A29AE66F000BE2C57 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
-		CADFD29C29AE67C600BE2C57 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		CADFD29E29AE67D100BE2C57 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalftimePick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA659E1492EE1FD6ACD14A1D /* Pods-HalftimePickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePickTests.debug.xcconfig"; path = "Target Support Files/Pods-HalftimePickTests/Pods-HalftimePickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFEC1DB6DDF9CF965317D46 /* Pods-HalftimePick-HalftimePickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePick-HalftimePickUITests.release.xcconfig"; path = "Target Support Files/Pods-HalftimePick-HalftimePickUITests/Pods-HalftimePick-HalftimePickUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,9 +271,6 @@
 		CABF198A29A5E48E0048BE2C /* SportsDetail */ = {
 			isa = PBXGroup;
 			children = (
-				CADFD29C29AE67C600BE2C57 /* Font.swift */,
-				CADFD29A29AE66F000BE2C57 /* CollectionViewProvider.swift */,
-				CADFD29E29AE67D100BE2C57 /* Color.swift */,
 				CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */,
 				CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */,
 			);
@@ -558,14 +549,11 @@
 				CABF198C29A5E4BC0048BE2C /* SportsDetailViewController.swift in Sources */,
 				CA7D6DFC299CAC1D0002DC30 /* homeApi.swift in Sources */,
 				CABEF2952998CEF900751299 /* ViewController.swift in Sources */,
-				CADFD29B29AE66F000BE2C57 /* CollectionViewProvider.swift in Sources */,
 				CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */,
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,
-				CADFD29F29AE67D100BE2C57 /* Color.swift in Sources */,
 				CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */,
 				CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */,
 				CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */,
-				CADFD29D29AE67C600BE2C57 /* Font.swift in Sources */,
 				CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */,
 				CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */,
 				CABEF2932998CEF900751299 /* SceneDelegate.swift in Sources */,

@@ -59,7 +59,7 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         cell.cellTitle.text = "NCAAF FOOTBALL \(indexPath.row+1)"
         cell.gameImage.image = UIImage(named: "nfl")
-        cell.gameImage.backgroundColor = .white
+    //    cell.gameImage.backgroundColor = .white
         cell.gameImage.backgroundColor =  UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
 //        cell.gameImage.maskCircle(anyImage: UIImage(named: "nfl")!)
         //var content = cell.defaultContentConfiguration()
