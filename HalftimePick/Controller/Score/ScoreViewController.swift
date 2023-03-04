@@ -43,6 +43,9 @@ extension ScoreViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 100
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0//Choose your custom row height
+    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "scorecell", for: indexPath) as! ScoreTableViewCell
@@ -57,7 +60,7 @@ extension ScoreViewController:  UITableViewDelegate, UITableViewDataSource {
         cell.team2img.backgroundColor =  UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
         cell.team1score.text = "\(indexPath.row + 1)"
         cell.team2score.text = "\(indexPath.row + 2)"
-        cell.team1img.backgroundColor = .white
+      
 //        cell.team1img.maskCircle(anyImage: UIImage(named: "Home")!)
 //        cell.team2img.backgroundColor = .white
 //        cell.team2img.maskCircle(anyImage: UIImage(named: "Home")!)
@@ -69,6 +72,7 @@ extension ScoreViewController:  UITableViewDelegate, UITableViewDataSource {
         print(indexPath.row)
     }
 }
+
 
 
 //import UIKit

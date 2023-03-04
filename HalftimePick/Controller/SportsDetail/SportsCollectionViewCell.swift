@@ -12,7 +12,7 @@ class SportsCollectionViewCell: UICollectionViewCell {
     
     private let imageview : UIImageView = {
         let imageview = UIImageView()
-        imageview.contentMode = .scaleAspectFit
+        imageview.contentMode = .topLeft
         return imageview
     }()
     override init(frame: CGRect) {

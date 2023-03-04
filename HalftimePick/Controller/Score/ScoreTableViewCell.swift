@@ -33,8 +33,12 @@ class ScoreTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
-        team1img.layer.cornerRadius = bounds.height / 2
-        team2img.layer.cornerRadius = bounds.height / 2
+        team1img.frame = contentView.bounds
+        team2img.frame = contentView.bounds
+//        team1img.layer.cornerRadius = bounds.height / 2
+//        team2img.layer.cornerRadius = bounds.height / 2
+        team1img.clipsToBounds = true
+        team2img.clipsToBounds = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

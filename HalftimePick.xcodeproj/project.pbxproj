@@ -14,6 +14,7 @@
 		CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */; };
 		CA7D6E03299CF7E20002DC30 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */; };
 		CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */; };
+		CAA4F2FA29B3816C00D8252F /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */; };
 		CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */; };
 		CAAE6E95299B75F800BC6EF2 /* gamelistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */; };
 		CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2902998CEF900751299 /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
 		CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompositionalLayout.swift; path = "../../../../../../Downloads/ios-tutorials-compositional-layout/CompositionalLayout/CompositionalLayout.swift"; sourceTree = "<group>"; };
 		CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamelistTableViewCell.swift; sourceTree = "<group>"; };
 		CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gamelistTableViewCell.xib; sourceTree = "<group>"; };
 		CABEF28D2998CEF900751299 /* HalftimePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalftimePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +273,7 @@
 		CABF198A29A5E48E0048BE2C /* SportsDetail */ = {
 			isa = PBXGroup;
 			children = (
+				CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */,
 				CABF198B29A5E4BC0048BE2C /* SportsDetailViewController.swift */,
 				CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */,
 			);
@@ -544,6 +547,7 @@
 				CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */,
 				CABEF2D02999048C00751299 /* PickViewController.swift in Sources */,
 				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
+				CAA4F2FA29B3816C00D8252F /* CompositionalLayout.swift in Sources */,
 				CABEF2D529996E5700751299 /* appbar.swift in Sources */,
 				CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */,
 				CABF198C29A5E4BC0048BE2C /* SportsDetailViewController.swift in Sources */,

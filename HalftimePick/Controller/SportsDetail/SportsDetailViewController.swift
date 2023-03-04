@@ -34,10 +34,6 @@ class SportsDetailViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func setupCollectionView(){
-//        let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: view.frame.size.width/3, height: view.frame.size.height/4)
-//        layout.minimumLineSpacing = 0
-//        layout.minimumInteritemSpacing = 0
         collectionView = UICollectionView(frame: .zero,collectionViewLayout: SportsDetailViewController.createLayout())
         collectionView?.backgroundColor = .black
         collectionView?.delegate = self
@@ -56,29 +52,25 @@ class SportsDetailViewController: UIViewController, UICollectionViewDelegate, UI
     
     
     static func createLayout() -> UICollectionViewCompositionalLayout{
-        //items
-        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+        //item
+        let fitem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .fractionalHeight(1), spacing: 1)
+        let item = CompositionalLayout.createItem(width: .fractionalWidth(0.5), height: .fractionalHeight(1), spacing: 1)
         
-        let verticalStackItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+        //margin
+        let verticalGroup = CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(0.5), height: .fractionalHeight(1), item: fitem, count: 2)
         
-        
-        let verticalStackGroup = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1)), subitem: verticalStackItem, count: 2)
         //group
+        let horizontalGroup = CompositionalLayout.createGroup(alignment: .horizontal, width: .fractionalWidth(1), height: .absolute(200), items: [item,verticalGroup])
         
-        
-//        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [item])
-        
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(2/5)), subitem: item, count: 1)
-        
-        
-        
+        let mainItem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .absolute(200), spacing: 1)
+        let mainGroup =  CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(1), height: .absolute(400), items: [mainItem,horizontalGroup])
         
       
         //section
-        
-        let section = NSCollectionLayoutSection(group: group)
+        let section = NSCollectionLayoutSection(group: mainGroup)
         //return
-        
-      return  UICollectionViewCompositionalLayout(section: section)
+        return UICollectionViewCompositionalLayout(section: section)
+    
+       
     }
 }
