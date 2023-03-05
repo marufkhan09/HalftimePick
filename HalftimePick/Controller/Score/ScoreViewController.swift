@@ -41,7 +41,7 @@ class ScoreViewController: UIViewController {
 
 extension ScoreViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 15
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80.0//Choose your custom row height
@@ -60,6 +60,8 @@ extension ScoreViewController:  UITableViewDelegate, UITableViewDataSource {
         cell.team2img.backgroundColor =  UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
         cell.team1score.text = "\(indexPath.row + 1)"
         cell.team2score.text = "\(indexPath.row + 2)"
+        cell.timelabel.text = "\(indexPath.row):13 2nd"
+        cell.timelabel2.text = "\(indexPath.row+3)th & \(indexPath.row+1)"
       
 //        cell.team1img.maskCircle(anyImage: UIImage(named: "Home")!)
 //        cell.team2img.backgroundColor = .white

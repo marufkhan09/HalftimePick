@@ -2,75 +2,102 @@
 //  SportsDetailViewController.swift
 //  HalftimePick
 //
-//  Created by Maruf Khan on 22/2/23.
+//  Created by Maruf Khan on 5/3/23.
 //
 
 import UIKit
 
-class SportsDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        100
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SportsCollectionViewCell.identifier, for: indexPath) as? SportsCollectionViewCell else {
-            fatalError()
-        }
-        cell.configure(with: UIImage(named: "demopic"))
-        return cell
-    }
-    
-    private var collectionView  : UICollectionView?
+class SportsDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
-        newsNavBar(SportsDetailViewController(), leftAcion: #selector(receivedMsg), rightAction: #selector(receivedMsg))
-        view.backgroundColor = .white
+        //
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
     }
     
     override func viewDidLoad() {
-        setupCollectionView()
-        
         super.viewDidLoad()
+        configureUI()
+        
+        // Do any additional setup after loading the view.
+    }
+    let scrollView: UIScrollView = {
+        let view = UIScrollView()
+        view.showsVerticalScrollIndicator = true
+        view.isDirectionalLockEnabled = true
+        view.showsHorizontalScrollIndicator = false
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    
+    let contentview : UIView = {
+        let view = UIView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    let topview : UIView = {
+        let view = UIView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    let titlelabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "asdadsda"
+        return label
+    }()
+    let sublabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "asdadsda"
+        return label
+    }()
+    
+    let newsImage : UIImageView = {
+        let img = UIImageView()
+        img.image = UIImage(named: "demopic")
+        img.contentMode = .scaleAspectFit
+        img.translatesAutoresizingMaskIntoConstraints = false
+        return img
+    }()
+    let desclabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda asdadsda"
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    func configureUI(){
+        view.addSubview(scrollView)
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            scrollView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            scrollView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),])
+        
+        scrollView.addSubview(contentview)
+        NSLayoutConstraint.activate([
+            contentview.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            contentview.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            contentview.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            contentview.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),contentview.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)])
+        configureTopView()
     }
     
-    func setupCollectionView(){
-        collectionView = UICollectionView(frame: .zero,collectionViewLayout: SportsDetailViewController.createLayout())
-        collectionView?.backgroundColor = .black
-        collectionView?.delegate = self
-        collectionView?.dataSource = self
-        collectionView?.register(SportsCollectionViewCell.self, forCellWithReuseIdentifier: SportsCollectionViewCell.identifier)
-        guard let collectionView = collectionView else {
-            return
-        }
-        view.addSubview(collectionView)
-        collectionView.frame = view.bounds
-    }
-    
-    @objc func receivedMsg() {
-        print("MSG Received")
-    }
-    
-    
-    static func createLayout() -> UICollectionViewCompositionalLayout{
-        //item
-        let fitem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .fractionalHeight(1), spacing: 1)
-        let item = CompositionalLayout.createItem(width: .fractionalWidth(0.5), height: .fractionalHeight(1), spacing: 1)
+    func configureTopView(){
+        contentview.addSubview(topview)
+        topview.topAnchor.constraint(equalTo: contentview.topAnchor)
+        topview.leftAnchor.constraint(equalTo: contentview.leftAnchor,constant: 0)
+        topview.rightAnchor.constraint(equalTo: contentview.rightAnchor,constant: 0)
+        topview.heightAnchor.constraint(lessThanOrEqualToConstant: 200)
         
-        //margin
-        let verticalGroup = CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(0.5), height: .fractionalHeight(1), item: fitem, count: 2)
-        
-        //group
-        let horizontalGroup = CompositionalLayout.createGroup(alignment: .horizontal, width: .fractionalWidth(1), height: .absolute(200), items: [item,verticalGroup])
-        
-        let mainItem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .absolute(200), spacing: 1)
-        let mainGroup =  CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(1), height: .absolute(400), items: [mainItem,horizontalGroup])
-        
-      
-        //section
-        let section = NSCollectionLayoutSection(group: mainGroup)
-        //return
-        return UICollectionViewCompositionalLayout(section: section)
-    
-       
     }
 }

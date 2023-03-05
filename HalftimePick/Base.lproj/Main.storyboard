@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="-2"/>
+            <point key="canvasLocation" x="56" y="-13"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="dAn-IT-reQ">
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="740" y="-12"/>
         </scene>
-        <!--Sports Detail View Controller-->
+        <!--Sports List View Controller-->
         <scene sceneID="YCA-s7-gsR">
             <objects>
-                <viewController storyboardIdentifier="sportsController" id="Xlc-7N-zar" customClass="SportsDetailViewController" customModule="HalftimePick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sportsController" id="Xlc-7N-zar" customClass="SportsListViewController" customModule="HalftimePick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hAR-58-OBF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KvA-RP-5tI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2991.6030534351144" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1469" y="-13"/>
         </scene>
     </scenes>
     <resources>

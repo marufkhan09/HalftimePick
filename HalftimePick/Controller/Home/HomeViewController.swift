@@ -59,16 +59,8 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         cell.cellTitle.text = "NCAAF FOOTBALL \(indexPath.row+1)"
         cell.gameImage.image = UIImage(named: "nfl")
-    //    cell.gameImage.backgroundColor = .white
         cell.gameImage.backgroundColor =  UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
-//        cell.gameImage.maskCircle(anyImage: UIImage(named: "nfl")!)
-        //var content = cell.defaultContentConfiguration()
-        //   content.image = UIImage(systemName: "star")
-        //content.text = "Cell \(indexPath.row+1)"
-        // Customize appearance.
-        // content.imageProperties.tintColor = .purple
-        //        content.image = UIImage(named: "logo")
-        //        cell.contentView.backgroundColor = UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
+
         
         return cell
     }
@@ -80,7 +72,7 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
 //
 //        self.present(sportsController, animated:true, completion:nil)
       
-        let newViewController = SportsDetailViewController()
+        let newViewController = SportsListViewController()
         self.navigationController?.pushViewController(newViewController, animated: true)
       
     }
