@@ -10,7 +10,9 @@ import UIKit
 class SportsDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         //
+        view.backgroundColor = .white
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         
     }
     
@@ -32,9 +34,7 @@ class SportsDetailViewController: UIViewController {
     
     let contentview : UIView = {
         let view = UIView()
-        
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
@@ -50,6 +50,7 @@ class SportsDetailViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "asdadsda"
+        label.font = UIFont(name: "AppleSDGothicNeo", size: 40)
         return label
     }()
     let sublabel : UILabel = {
@@ -81,7 +82,7 @@ class SportsDetailViewController: UIViewController {
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             scrollView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            scrollView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),])
+            scrollView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)])
         
         scrollView.addSubview(contentview)
         NSLayoutConstraint.activate([
@@ -94,10 +95,25 @@ class SportsDetailViewController: UIViewController {
     
     func configureTopView(){
         contentview.addSubview(topview)
-        topview.topAnchor.constraint(equalTo: contentview.topAnchor)
-        topview.leftAnchor.constraint(equalTo: contentview.leftAnchor,constant: 0)
-        topview.rightAnchor.constraint(equalTo: contentview.rightAnchor,constant: 0)
-        topview.heightAnchor.constraint(lessThanOrEqualToConstant: 200)
+        NSLayoutConstraint.activate([topview.topAnchor.constraint(equalTo: contentview.topAnchor),
+                                     topview.leftAnchor.constraint(equalTo: contentview.leftAnchor,constant: 0),
+                                     topview.rightAnchor.constraint(equalTo: contentview.rightAnchor,constant: 0),
+                                     topview.heightAnchor.constraint(lessThanOrEqualToConstant: 200)])
+        
+        topview.addSubview(titlelabel)
+        
+        NSLayoutConstraint.activate([titlelabel.topAnchor.constraint(equalTo: topview.topAnchor,constant: 10),
+                                     titlelabel.leftAnchor.constraint(equalTo: topview.leftAnchor),
+                                     titlelabel.rightAnchor.constraint(equalTo: topview.rightAnchor,constant: 10),
+                                     titlelabel.heightAnchor.constraint(lessThanOrEqualToConstant: 100)])
+        
+        topview.addSubview(sublabel)
+        NSLayoutConstraint.activate([
+            sublabel.topAnchor.constraint(equalTo: titlelabel.bottomAnchor,constant: 5),
+            sublabel.leftAnchor.constraint(equalTo: topview.leftAnchor,constant: 10),
+            sublabel.rightAnchor.constraint(equalTo: topview.rightAnchor),
+            sublabel.bottomAnchor.constraint(equalTo: topview.bottomAnchor)])
         
     }
+    
 }
