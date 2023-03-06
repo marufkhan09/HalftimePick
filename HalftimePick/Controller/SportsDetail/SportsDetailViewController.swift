@@ -45,6 +45,16 @@ class SportsDetailViewController: UIViewController {
         return view
     }()
     
+    let profileSectionTopview : newsPostersDetail = {
+        let view = newsPostersDetail()
+        view.newsTitle.text = "Leo John"
+        view.newsPostTime.text = "Post . 5hr ago"
+        view.profileImage.image = UIImage(named: "demopic")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
     let titlelabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -108,19 +118,29 @@ class SportsDetailViewController: UIViewController {
                                      newsImage.rightAnchor.constraint(equalTo: topview.rightAnchor),
                                      newsImage.heightAnchor.constraint(lessThanOrEqualToConstant: 200)])
         
-        topview.addSubview(titlelabel)
-
-        NSLayoutConstraint.activate([titlelabel.topAnchor.constraint(equalTo: topview.topAnchor,constant: 210),
-                                     titlelabel.leftAnchor.constraint(equalTo: topview.leftAnchor,constant: 10),
-                                     titlelabel.rightAnchor.constraint(equalTo: topview.rightAnchor,constant: 10),
-                                     titlelabel.heightAnchor.constraint(lessThanOrEqualToConstant: 20)])
+//        topview.addSubview(titlelabel)
+//
+//        NSLayoutConstraint.activate([titlelabel.topAnchor.constraint(equalTo: topview.topAnchor,constant: 210),
+//                                     titlelabel.leftAnchor.constraint(equalTo: topview.leftAnchor,constant: 10),
+//                                     titlelabel.rightAnchor.constraint(equalTo: topview.rightAnchor,constant: 10),
+//                                     titlelabel.heightAnchor.constraint(lessThanOrEqualToConstant: 20)])
+//
+//        topview.addSubview(sublabel)
+//        NSLayoutConstraint.activate([
+//            sublabel.topAnchor.constraint(equalTo: titlelabel.bottomAnchor,constant: 5),
+//            sublabel.leftAnchor.constraint(equalTo: topview.leftAnchor,constant: 10),
+//            sublabel.rightAnchor.constraint(equalTo: topview.rightAnchor),
+//            sublabel.bottomAnchor.constraint(equalTo: topview.bottomAnchor)])
         
-        topview.addSubview(sublabel)
-        NSLayoutConstraint.activate([
-            sublabel.topAnchor.constraint(equalTo: titlelabel.bottomAnchor,constant: 5),
-            sublabel.leftAnchor.constraint(equalTo: topview.leftAnchor,constant: 10),
-            sublabel.rightAnchor.constraint(equalTo: topview.rightAnchor),
-            sublabel.bottomAnchor.constraint(equalTo: topview.bottomAnchor)])
+        topview.addSubview(profileSectionTopview)
+        
+
+        NSLayoutConstraint.activate([profileSectionTopview.topAnchor.constraint(equalTo: topview.topAnchor,constant: 210),
+                                     profileSectionTopview.leftAnchor.constraint(equalTo: topview.leftAnchor,constant: 0),
+                                     profileSectionTopview.rightAnchor.constraint(equalTo: topview.rightAnchor,constant: 0),
+                                     profileSectionTopview.heightAnchor.constraint(lessThanOrEqualToConstant: 80)])
+        
+        
         
     }
     
