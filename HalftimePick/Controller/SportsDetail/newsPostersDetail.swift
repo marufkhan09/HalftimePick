@@ -28,8 +28,10 @@ class newsPostersDetail: UIView {
         setup()
     }
     override func layoutSubviews() {
+        
         profileImage?.layer.cornerRadius = (profileImage?.frame.size.width ?? 0.0) / 2
         profileImage?.clipsToBounds = true
+        profileImage.contentMode = UIView.ContentMode.scaleAspectFill
         profileImage?.layer.borderWidth = 0.0
         profileImage?.layer.borderColor = UIColor.white.cgColor
         super.layoutSubviews()
