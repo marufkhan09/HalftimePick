@@ -4,7 +4,8 @@ final class DetailView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     private lazy var tableView: UITableView = {
         let tableview = UITableView()
-        tableview.register(UINib.init(nibName: "TNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "TNewsTableViewCell")
+//        tableview.register(UINib.init(nibName: "TNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "TNewsTableViewCell")
+        tableview.register(TopNewsTableViewCell.self, forCellReuseIdentifier: <#T##String#>)
         tableview.delegate = self
         tableview.dataSource = self
         tableview.rowHeight = UITableView.automaticDimension

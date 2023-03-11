@@ -41,6 +41,7 @@ class TopNewsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupcontentContstraints()
+        setupImageViewConstraints()
         // Initialization code
     }
 
