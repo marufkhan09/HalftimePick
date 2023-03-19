@@ -42,8 +42,9 @@ class sportsCell: UICollectionViewCell {
     public lazy var headlineLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
+        label.font
         label.text = "It is a long established fact that a reader will readable content of a page when looking."
-        label.font = label.font.withSize(14)// title1, larger, title2 medium, title3 smaller
+        label.font = label.font.withSize(11)// title1, larger, title2 medium, title3 smaller
         return label
     }()
     public lazy var subTitleLabel: UILabel = {

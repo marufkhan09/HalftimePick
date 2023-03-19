@@ -1,18 +1,47 @@
-//
-//  StoryCollectionViewCell.swift
-//  MultiSectionCompositionalLayout
-//
-//  Created by Emmanuel Okwara on 15.05.22.
-//
+
 
 import UIKit
 
-final class StoryCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var cellImageView: UIImageView!
+class StoryCollectionViewCell: UICollectionViewCell {
+    static let identifier = "StoryCollectionViewCell"
     
-    func setup(imagestring : String) {
-        cellImageView.image = UIImage(named: imagestring)
-        cellImageView.layoutIfNeeded()
-        cellImageView.layer.cornerRadius = cellImageView.frame.height / 2
+    func setup(_ item: ListItem) {
+        
     }
+    
+    private let imageview : UIImageView = {
+        let imageview = UIImageView()
+        imageview.contentMode = .topLeft
+        return imageview
+    }()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        contentView.addSubview(imageview)
+        contentView.clipsToBounds = true
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(with image: UIImage?){
+        imageview.image = image
+         }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageview.frame = contentView.bounds
+        imageview.layoutIfNeeded()
+        imageview.layer.cornerRadius = imageview.frame.height / 2
+        imageview.clipsToBounds = true
+        imageview.contentMode = UIView.ContentMode.scaleToFill 
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageview.image = nil
+        
+    }
+    
 }
+
