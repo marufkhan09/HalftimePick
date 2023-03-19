@@ -8,13 +8,10 @@
 
 import UIKit
 
-protocol ProductCellDelegate {
-    func increaseNumber(cell: ProductCell,number : Int)
-    func decreaseNumber(cell: ProductCell,number : Int)
-}
+
 
 class ProductCell : UITableViewCell {
-    var delegate : ProductCellDelegate?
+
     let minValue = 0
     
     var product : Product? {

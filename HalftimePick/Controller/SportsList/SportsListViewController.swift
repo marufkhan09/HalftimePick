@@ -13,10 +13,11 @@ class SportsListViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SportsCollectionViewCell.identifier, for: indexPath) as? SportsCollectionViewCell else {
+      guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: sportsCell.identifier, for: indexPath) as? sportsCell else {
             fatalError()
         }
-        cell.configure(with: UIImage(named: "demopic"))
+        cell.configure(with: UIImage(named: "playdet"))
+        cell
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -43,7 +44,7 @@ class SportsListViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView?.backgroundColor = .black
         collectionView?.delegate = self
         collectionView?.dataSource = self
-        collectionView?.register(SportsCollectionViewCell.self, forCellWithReuseIdentifier: SportsCollectionViewCell.identifier)
+        collectionView?.register(sportsCell.self, forCellWithReuseIdentifier: sportsCell.identifier)
         guard let collectionView = collectionView else {
             return
         }
