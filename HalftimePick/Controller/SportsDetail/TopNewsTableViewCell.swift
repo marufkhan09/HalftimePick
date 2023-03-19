@@ -1,80 +1,69 @@
+////
+////  ProductCell.swift
+////  Sample_TableView
+////
+////  Created by Esat Kemal Ekren on 5.04.2018.
+////  Copyright © 2018 Esat Kemal Ekren. All rights reserved.
+////
 //
-//  TopNewsTableViewCell.swift
-//  HalftimePick
+//import UIKit
 //
-//  Created by Maruf Khan on 11/3/23.
 //
-
-import UIKit
-
-class TopNewsTableViewCell: UITableViewCell {
-    
-    public lazy var topnewsLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.text = "NFL is a long established fact that a reader will be readable content of a page when looking."
-        label.font = label.font.withSize(12)// title1, larger, title2 medium, title3 smaller
-        return label
-    }()
-    
-    public lazy var newsTime: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.text = "NFL is a long established fact that a reader will be readable content of a page when looking."
-        label.font = label.font.withSize(10)// title1, larger, title2 medium, title3 smaller
-        return label
-    }()
-    
-    public lazy var topNewsImageView: UIImageView = {
-        let iv = UIImageView()
-        iv.image = UIImage(named: "nfl")
-        iv.clipsToBounds = true
-        
-        return iv
-    }()
-    private lazy var cellcontentView: UIView = {
-        let view = UIView()
-        return view
-    }()
-    
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setupcontentContstraints()
-        setupImageViewConstraints()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    override func layoutSubviews() {
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
-        super.layoutSubviews()
-    }
-    
-    private func setupcontentContstraints() {
-        addSubview(cellcontentView)
-        cellcontentView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            cellcontentView.topAnchor.constraint(equalTo: topAnchor),
-            cellcontentView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            cellcontentView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            cellcontentView.trailingAnchor.constraint(equalTo: trailingAnchor),
-        ])
-    }
-    
-    private func setupImageViewConstraints() {
-        cellcontentView.addSubview(topNewsImageView)
-        topNewsImageView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            topNewsImageView.topAnchor.constraint(equalTo: cellcontentView.topAnchor),
-            topNewsImageView.leadingAnchor.constraint(equalTo: cellcontentView.leadingAnchor),
-            topNewsImageView.trailingAnchor.constraint(equalTo: cellcontentView.trailingAnchor),
-            topNewsImageView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.80)
-        ])
-    }
-
-}
+//class NewsCell : UITableViewCell {
+//    let minValue = 0
+//    
+//    var product : Product? {
+//        didSet {
+//            productImage.image = product?.productImage
+//            productNameLabel.text = product?.productName
+//            productDescriptionLabel.text = product?.productDesc
+//        }
+//    }
+//    
+//    
+//    private let productNameLabel : UILabel = {
+//        let lbl = UILabel()
+//        lbl.textColor = .white
+//        lbl.font = UIFont.boldSystemFont(ofSize: 16)
+//        lbl.textAlignment = .left
+//        return lbl
+//    }()
+//    
+//    
+//    private let productDescriptionLabel : UILabel = {
+//        let lbl = UILabel()
+//        lbl.textColor = .white
+//        lbl.font = UIFont.systemFont(ofSize: 16)
+//        lbl.textAlignment = .left
+//        lbl.numberOfLines = 0
+//        return lbl
+//    }()
+//    
+//    
+//    private let productImage : UIImageView = {
+//        let imgView = UIImageView(image: #imageLiteral(resourceName: "screenSplash"))
+//        imgView.contentMode = .scaleAspectFit
+//        imgView.clipsToBounds = true
+//        return imgView
+//    }()
+//
+//    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+//        super.init(style: style, reuseIdentifier: reuseIdentifier)
+//        
+//        contentView.addSubview(productImage)
+//        contentView.addSubview(productNameLabel)
+//        contentView.addSubview(productDescriptionLabel)
+//
+//        
+//        productImage.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, paddingRight: 0, width: 90, height: 0, enableInsets: false)
+//        productNameLabel.anchor(top: topAnchor, left: productImage.rightAnchor, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
+//        productDescriptionLabel.anchor(top: productNameLabel.bottomAnchor, left: productImage.rightAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
+//    
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//    
+//    
+//}

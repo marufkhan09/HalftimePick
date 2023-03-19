@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         view.backgroundColor = .black
-        homeNavBar(HomeViewController())
+        homeNavBar(HomeViewController(),title: "All Sports")
         initialiseTableView()
         super.viewDidLoad()
         
@@ -51,9 +51,10 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
         return 100
     }
     // Set the spacing between sections
-     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-         return 10
-     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+           return 10
+       }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! gamelistTableViewCell
         cell.selectionStyle = .none

@@ -36,7 +36,7 @@ extension UIViewController {
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
-    func homeNavBar(_ target: UIViewController) {
+    func homeNavBar(_ target: UIViewController,title : String) {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(red: 0.11, green: 0.19, blue: 0.32, alpha: 1.00)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -51,7 +51,7 @@ extension UIViewController {
 //          self.navigationItem.titleView = UIImageView(image: UIImage(named: "logo"))
         
        
-        self.navigationItem.title = "All Sports"
+        self.navigationItem.title = title
         
         
       

@@ -1,35 +1,7 @@
 import UIKit
 
-final class DetailView: UIView, UITableViewDelegate, UITableViewDataSource {
-    
-    private lazy var tableView: UITableView = {
-        let tableview = UITableView()
-//        tableview.register(UINib.init(nibName: "TNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "TNewsTableViewCell")
-        tableview.register(TopNewsTableViewCell.self, forCellReuseIdentifier: <#T##String#>)
-        tableview.delegate = self
-        tableview.dataSource = self
-        tableview.rowHeight = UITableView.automaticDimension
-        tableview.estimatedRowHeight = UITableView.automaticDimension
-        tableview.separatorColor = .clear
-        return tableview
-    }()
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TNewsTableViewCell", for: indexPath) as! TNewsTableViewCell
-        cell.selectionStyle = .none
-        cell.newstitle.text = "It is a long established fact that a reader will be distracted when looking."
-        cell.newstime.text = "\(indexPath.row+1) hours ago"
-        cell.newsimage.image = UIImage(named: "demopic")
-//        cell.gameImage.backgroundColor =  UIColor(red: 0.05, green: 0.09, blue: 0.15, alpha: 1.00)
-        return cell
-    }
-    
-    
-    
-    
+final class DetailView: UIView{
+
     // setting up a scroll view
     // 1. add scrollview
     // 2. add content view
@@ -127,19 +99,19 @@ final class DetailView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     private func commonInit() {
-//        setupScrollViewContstraints()
-//        setupContentViewConstraints()
-//        setupItemImageViewConstraints()
-//        setupProfilePicConstraints()
-//        setupProfileTitleConstraints()
-//        setupPostedConstraints()
-//        setupSaveButtonConstraints()
-//        setupShareButtonConstraints()
-//        setuphedlineLabelConstraints()
-//        setupDescriptionLabelConstraints()
+     setupScrollViewContstraints()
+   setupContentViewConstraints()
+       setupItemImageViewConstraints()
+    setupProfilePicConstraints()
+        setupProfileTitleConstraints()
+       setupPostedConstraints()
+      setupSaveButtonConstraints()
+       setupShareButtonConstraints()
+  setuphedlineLabelConstraints()
+      setupDescriptionLabelConstraints()
        // setupTableView()
         
-        contentView.addSubview(tableView)
+        
     }
     
     private func setupScrollViewContstraints() {
@@ -249,28 +221,25 @@ final class DetailView: UIView, UITableViewDelegate, UITableViewDataSource {
       ])
     }
     
-    private func setupTableView(){
-//        contentView.addSubview(tableView)
-//        tableView.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            tableView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 20),
-//            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-//            tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+//    private func setupTableView(){
 //
-//          descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
-//        ])
-        
-        contentView.addSubview(tableView)
-//        tableView.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            tableView.topAnchor.constraint(equalTo: contentView.topAnchor),
-//            tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-//            tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-////            tableView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 1)
-//            tableView.heightAnchor.constraint(equalToConstant: 120)
-//        ])
-        
-    }
+//        contentView.addSubview(tableView)
+////        tableView.translatesAutoresizingMaskIntoConstraints = false
+////        NSLayoutConstraint.activate([
+////            tableView.topAnchor.constraint(equalTo: contentView.topAnchor),
+////            tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+////            tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+//////            tableView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 1)
+////            tableView.heightAnchor.constraint(equalToConstant: 120)
+////        ])
+////        NSLayoutConstraint.activate([
+////            tableView.topAnchor.constraint(equalTo: contentView.topAnchor),
+////            tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+////            tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+////            tableView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.80)
+////        ])
+//
+//    }
     
     
     

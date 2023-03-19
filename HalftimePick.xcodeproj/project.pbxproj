@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4AA045A0D527B1526571C9AF /* Pods_HalftimePick_HalftimePickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5826DF52D2F6E7862AE04 /* Pods_HalftimePick_HalftimePickUITests.framework */; };
 		B526A59BF845EC3D8CB41B86 /* Pods_HalftimePickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8DC730DE02F63EFAAE023F /* Pods_HalftimePickTests.framework */; };
+		CA1A0F9329C6EAAE009C93C5 /* sportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A0F9229C6EAAE009C93C5 /* sportsCell.swift */; };
+		CA1CC60329C2476800B45DF1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC5FF29C2476700B45DF1 /* Product.swift */; };
+		CA1CC60429C2476800B45DF1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60029C2476800B45DF1 /* ProductCell.swift */; };
+		CA1CC60529C2476800B45DF1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60129C2476800B45DF1 /* Extension.swift */; };
+		CA1CC60629C2476800B45DF1 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60229C2476800B45DF1 /* PickViewController.swift */; };
+		CA1CC60829C24ACF00B45DF1 /* NewsDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60729C24ACF00B45DF1 /* NewsDetailTableViewCell.swift */; };
 		CA7D6DFC299CAC1D0002DC30 /* homeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6DFB299CAC1C0002DC30 /* homeApi.swift */; };
 		CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6DFE299CAC6C0002DC30 /* HomeModel.swift */; };
 		CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */; };
@@ -30,14 +36,13 @@
 		CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2C62998EB5B00751299 /* HomeViewController.swift */; };
 		CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CA2998EBB000751299 /* NewsViewController.swift */; };
 		CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */; };
-		CABEF2D02999048C00751299 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CF2999048C00751299 /* PickViewController.swift */; };
 		CABEF2D529996E5700751299 /* appbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D429996E5700751299 /* appbar.swift */; };
 		CABF198C29A5E4BC0048BE2C /* SportsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */; };
 		CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */; };
+		CADFD7E029C0982100EEA16D /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */; };
+		CADFD7E229C0984E00EEA16D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD7E129C0984E00EEA16D /* ListItem.swift */; };
 		CAEBB1F829BC924C00CF3958 /* customview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1F729BC924C00CF3958 /* customview.swift */; };
 		CAEBB1FE29BCB5FF00CF3958 /* TopNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */; };
-		CAEBB20129BCB90D00CF3958 /* TNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1FF29BCB90D00CF3958 /* TNewsTableViewCell.swift */; };
-		CAEBB20229BCB90D00CF3958 /* TNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAEBB20029BCB90D00CF3958 /* TNewsTableViewCell.xib */; };
 		CAF7D93029B4729F009CE22D /* SportsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */; };
 		FE96923252EBF7E8AB32AE8C /* Pods_HalftimePick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +69,12 @@
 		92E1E21ECC91F4245BFDEB44 /* Pods-HalftimePick-HalftimePickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePick-HalftimePickUITests.debug.xcconfig"; path = "Target Support Files/Pods-HalftimePick-HalftimePickUITests/Pods-HalftimePick-HalftimePickUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		944BE96AE639543B8D477030 /* Pods-HalftimePick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePick.debug.xcconfig"; path = "Target Support Files/Pods-HalftimePick/Pods-HalftimePick.debug.xcconfig"; sourceTree = "<group>"; };
 		AC584F2CE1F22957E3D1BA28 /* Pods-HalftimePick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePick.release.xcconfig"; path = "Target Support Files/Pods-HalftimePick/Pods-HalftimePick.release.xcconfig"; sourceTree = "<group>"; };
+		CA1A0F9229C6EAAE009C93C5 /* sportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsCell.swift; sourceTree = "<group>"; };
+		CA1CC5FF29C2476700B45DF1 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CA1CC60029C2476800B45DF1 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		CA1CC60129C2476800B45DF1 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CA1CC60229C2476800B45DF1 /* PickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
+		CA1CC60729C24ACF00B45DF1 /* NewsDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailTableViewCell.swift; sourceTree = "<group>"; };
 		CA7D6DFB299CAC1C0002DC30 /* homeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeApi.swift; sourceTree = "<group>"; };
 		CA7D6DFE299CAC6C0002DC30 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,14 +100,13 @@
 		CABEF2C62998EB5B00751299 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CABEF2CA2998EBB000751299 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		CABEF2CF2999048C00751299 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		CABEF2D429996E5700751299 /* appbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appbar.swift; sourceTree = "<group>"; };
 		CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListViewController.swift; sourceTree = "<group>"; };
 		CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CADFD7E129C0984E00EEA16D /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		CAEBB1F729BC924C00CF3958 /* customview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customview.swift; sourceTree = "<group>"; };
 		CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNewsTableViewCell.swift; sourceTree = "<group>"; };
-		CAEBB1FF29BCB90D00CF3958 /* TNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNewsTableViewCell.swift; sourceTree = "<group>"; };
-		CAEBB20029BCB90D00CF3958 /* TNewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TNewsTableViewCell.xib; sourceTree = "<group>"; };
 		CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsDetailViewController.swift; sourceTree = "<group>"; };
 		CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalftimePick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA659E1492EE1FD6ACD14A1D /* Pods-HalftimePickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePickTests.debug.xcconfig"; path = "Target Support Files/Pods-HalftimePickTests/Pods-HalftimePickTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +259,8 @@
 		CABEF2C82998EB8400751299 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				CADFD7E129C0984E00EEA16D /* ListItem.swift */,
+				CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */,
 				CABEF2CA2998EBB000751299 /* NewsViewController.swift */,
 			);
 			path = News;
@@ -268,7 +280,10 @@
 		CABEF2CE2999046E00751299 /* PickController */ = {
 			isa = PBXGroup;
 			children = (
-				CABEF2CF2999048C00751299 /* PickViewController.swift */,
+				CA1CC60129C2476800B45DF1 /* Extension.swift */,
+				CA1CC5FF29C2476700B45DF1 /* Product.swift */,
+				CA1CC60029C2476800B45DF1 /* ProductCell.swift */,
+				CA1CC60229C2476800B45DF1 /* PickViewController.swift */,
 			);
 			path = PickController;
 			sourceTree = "<group>";
@@ -287,6 +302,7 @@
 				CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */,
 				CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */,
 				CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */,
+				CA1A0F9229C6EAAE009C93C5 /* sportsCell.swift */,
 			);
 			path = SportsList;
 			sourceTree = "<group>";
@@ -297,8 +313,7 @@
 				CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */,
 				CAEBB1F729BC924C00CF3958 /* customview.swift */,
 				CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */,
-				CAEBB1FF29BCB90D00CF3958 /* TNewsTableViewCell.swift */,
-				CAEBB20029BCB90D00CF3958 /* TNewsTableViewCell.xib */,
+				CA1CC60729C24ACF00B45DF1 /* NewsDetailTableViewCell.swift */,
 			);
 			path = SportsDetail;
 			sourceTree = "<group>";
@@ -438,7 +453,6 @@
 				CA7D6E03299CF7E20002DC30 /* ScoreTableViewCell.xib in Resources */,
 				CAAE6E95299B75F800BC6EF2 /* gamelistTableViewCell.xib in Resources */,
 				CABEF29D2998CEFA00751299 /* LaunchScreen.storyboard in Resources */,
-				CAEBB20229BCB90D00CF3958 /* TNewsTableViewCell.xib in Resources */,
 				CABEF29A2998CEFA00751299 /* Assets.xcassets in Resources */,
 				CABEF2982998CEF900751299 /* Main.storyboard in Resources */,
 			);
@@ -568,15 +582,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1CC60629C2476800B45DF1 /* PickViewController.swift in Sources */,
 				CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */,
-				CABEF2D02999048C00751299 /* PickViewController.swift in Sources */,
-				CAEBB20129BCB90D00CF3958 /* TNewsTableViewCell.swift in Sources */,
 				CAF7D93029B4729F009CE22D /* SportsDetailViewController.swift in Sources */,
 				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
+				CA1CC60429C2476800B45DF1 /* ProductCell.swift in Sources */,
 				CAEBB1FE29BCB5FF00CF3958 /* TopNewsTableViewCell.swift in Sources */,
 				CAA4F2FA29B3816C00D8252F /* CompositionalLayout.swift in Sources */,
 				CABEF2D529996E5700751299 /* appbar.swift in Sources */,
 				CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */,
+				CADFD7E229C0984E00EEA16D /* ListItem.swift in Sources */,
+				CADFD7E029C0982100EEA16D /* StoryCollectionViewCell.swift in Sources */,
+				CA1A0F9329C6EAAE009C93C5 /* sportsCell.swift in Sources */,
 				CABF198C29A5E4BC0048BE2C /* SportsListViewController.swift in Sources */,
 				CAEBB1F829BC924C00CF3958 /* customview.swift in Sources */,
 				CA7D6DFC299CAC1D0002DC30 /* homeApi.swift in Sources */,
@@ -584,11 +601,14 @@
 				CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */,
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,
 				CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */,
+				CA1CC60329C2476800B45DF1 /* Product.swift in Sources */,
 				CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */,
 				CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */,
 				CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */,
 				CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */,
+				CA1CC60529C2476800B45DF1 /* Extension.swift in Sources */,
 				CABEF2932998CEF900751299 /* SceneDelegate.swift in Sources */,
+				CA1CC60829C24ACF00B45DF1 /* NewsDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

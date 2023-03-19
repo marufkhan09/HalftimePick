@@ -11,7 +11,7 @@ class ScoreViewController: UIViewController {
     let tableview = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeNavBar(HomeViewController())
+        homeNavBar(HomeViewController(),title: "NFL")
         initialiseTableView()
         // Do any additional setup after loading the view.
         view.backgroundColor = .black
