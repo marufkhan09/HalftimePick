@@ -20,6 +20,7 @@
 		CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */; };
 		CA7D6E03299CF7E20002DC30 /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */; };
 		CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */; };
+		CA9F81F229C885B300703224 /* livegame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9F81F129C885B300703224 /* livegame.swift */; };
 		CAA4F2FA29B3816C00D8252F /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */; };
 		CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */; };
 		CAAE6E95299B75F800BC6EF2 /* gamelistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */; };
@@ -40,7 +41,6 @@
 		CABF198C29A5E4BC0048BE2C /* SportsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */; };
 		CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */; };
 		CADFD7E029C0982100EEA16D /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */; };
-		CADFD7E229C0984E00EEA16D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD7E129C0984E00EEA16D /* ListItem.swift */; };
 		CAEBB1F829BC924C00CF3958 /* customview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1F729BC924C00CF3958 /* customview.swift */; };
 		CAEBB1FE29BCB5FF00CF3958 /* TopNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */; };
 		CAF7D93029B4729F009CE22D /* SportsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */; };
@@ -80,6 +80,7 @@
 		CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		CA7D6E01299CF7E20002DC30 /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
 		CA8CC7C029A38D66006054EB /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		CA9F81F129C885B300703224 /* livegame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livegame.swift; sourceTree = "<group>"; };
 		CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompositionalLayout.swift; path = "../../../../../../Downloads/ios-tutorials-compositional-layout/CompositionalLayout/CompositionalLayout.swift"; sourceTree = "<group>"; };
 		CAAE6E92299B75F800BC6EF2 /* gamelistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamelistTableViewCell.swift; sourceTree = "<group>"; };
 		CAAE6E93299B75F800BC6EF2 /* gamelistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = gamelistTableViewCell.xib; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListViewController.swift; sourceTree = "<group>"; };
 		CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		CADFD7E129C0984E00EEA16D /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		CAEBB1F729BC924C00CF3958 /* customview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customview.swift; sourceTree = "<group>"; };
 		CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNewsTableViewCell.swift; sourceTree = "<group>"; };
 		CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsDetailViewController.swift; sourceTree = "<group>"; };
@@ -259,9 +259,9 @@
 		CABEF2C82998EB8400751299 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				CADFD7E129C0984E00EEA16D /* ListItem.swift */,
 				CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */,
 				CABEF2CA2998EBB000751299 /* NewsViewController.swift */,
+				CA9F81F129C885B300703224 /* livegame.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -587,11 +587,11 @@
 				CAF7D93029B4729F009CE22D /* SportsDetailViewController.swift in Sources */,
 				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
 				CA1CC60429C2476800B45DF1 /* ProductCell.swift in Sources */,
+				CA9F81F229C885B300703224 /* livegame.swift in Sources */,
 				CAEBB1FE29BCB5FF00CF3958 /* TopNewsTableViewCell.swift in Sources */,
 				CAA4F2FA29B3816C00D8252F /* CompositionalLayout.swift in Sources */,
 				CABEF2D529996E5700751299 /* appbar.swift in Sources */,
 				CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */,
-				CADFD7E229C0984E00EEA16D /* ListItem.swift in Sources */,
 				CADFD7E029C0982100EEA16D /* StoryCollectionViewCell.swift in Sources */,
 				CA1A0F9329C6EAAE009C93C5 /* sportsCell.swift in Sources */,
 				CABF198C29A5E4BC0048BE2C /* SportsListViewController.swift in Sources */,

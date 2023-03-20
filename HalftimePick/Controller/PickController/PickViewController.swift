@@ -52,9 +52,6 @@ class PickViewController: UITableViewController {
     
     
     func createProductArray() {
-//        products.append(Product)
-//        products.append(Product(productName: "Desert",  productImage: UIImage(named: "demopic")! , productDesc: "This is so yummy"))
-//        products.append(Product(productName: "Yum cha", productImage: UIImage(named: "demopic")!, productDesc: "This is so yummy"))
         products.append(Product(location: "Suns @ Cavaliers", timelabel: "Tomorrow, 06:00", team1: "CHI Bears", team2: "DET Lions", team1img: UIImage(named: "chibears")!, team2img: UIImage(named: "lions")!, team1money: "+240", team2money: "-300", team1speard: "+7.5", team1subspeard: "-110", team2speard: "+7.5", team2subspeard: "-110", team1total: "O 232.5", team2total: "O 232.5",team1subtot: "-110",team2subtot: "-110"))
         products.append(Product(location: "Suns @ Cavaliers", timelabel: "Tomorrow, 06:00", team1: "CHI Bears", team2: "DET Lions", team1img: UIImage(named: "chibears")!, team2img: UIImage(named: "lions")!, team1money: "+240", team2money: "-300", team1speard: "+7.5", team1subspeard: "-110", team2speard: "+7.5", team2subspeard: "-110", team1total: "O 232.5", team2total: "O 232.5",team1subtot: "-110",team2subtot: "-110"))
         products.append(Product(location: "Suns @ Cavaliers", timelabel: "Tomorrow, 06:00", team1: "CHI Bears", team2: "DET Lions", team1img: UIImage(named: "chibears")!, team2img: UIImage(named: "lions")!, team1money: "+240", team2money: "-300", team1speard: "+7.5", team1subspeard: "-110", team2speard: "+7.5", team2subspeard: "-110", team1total: "O 232.5", team2total: "O 232.5",team1subtot: "-110",team2subtot: "-110"))

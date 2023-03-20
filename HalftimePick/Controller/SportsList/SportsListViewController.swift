@@ -17,7 +17,7 @@ class SportsListViewController: UIViewController, UICollectionViewDelegate, UICo
             fatalError()
         }
         cell.configure(with: UIImage(named: "playdet"))
-        cell
+        //cell
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

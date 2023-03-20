@@ -11,8 +11,6 @@ import UIKit
 
 
 class ProductCell : UITableViewCell {
-
-    let minValue = 0
     
     var product : Product? {
         didSet {
