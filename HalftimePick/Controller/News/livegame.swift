@@ -16,5 +16,10 @@ struct Livescore {
     var team1Score : String
     var team2Score : String
     var liveScore : String
-
+    var upcomingTeam1 : String
+    var upcomingTeam2 : String
+    var upcomingTeam1img : UIImage
+    var upcomingTeam2img : UIImage
+    var upcomingMTime : String
+    var upcomingGame : String
 }
