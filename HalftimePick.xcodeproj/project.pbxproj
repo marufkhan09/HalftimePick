@@ -41,10 +41,8 @@
 		CABEF2CD2998EBBA00751299 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */; };
 		CABEF2D529996E5700751299 /* appbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEF2D429996E5700751299 /* appbar.swift */; };
 		CABF198C29A5E4BC0048BE2C /* SportsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */; };
-		CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */; };
 		CADFD7E029C0982100EEA16D /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */; };
 		CAEBB1F829BC924C00CF3958 /* customview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1F729BC924C00CF3958 /* customview.swift */; };
-		CAEBB1FE29BCB5FF00CF3958 /* TopNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */; };
 		CAF7D93029B4729F009CE22D /* SportsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */; };
 		FE96923252EBF7E8AB32AE8C /* Pods_HalftimePick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */; };
 /* End PBXBuildFile section */
@@ -107,10 +105,8 @@
 		CABEF2CC2998EBBA00751299 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CABEF2D429996E5700751299 /* appbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appbar.swift; sourceTree = "<group>"; };
 		CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListViewController.swift; sourceTree = "<group>"; };
-		CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAEBB1F729BC924C00CF3958 /* customview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customview.swift; sourceTree = "<group>"; };
-		CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNewsTableViewCell.swift; sourceTree = "<group>"; };
 		CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsDetailViewController.swift; sourceTree = "<group>"; };
 		CB187C9DCAE5DAAC523BF1CE /* Pods_HalftimePick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalftimePick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA659E1492EE1FD6ACD14A1D /* Pods-HalftimePickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalftimePickTests.debug.xcconfig"; path = "Target Support Files/Pods-HalftimePickTests/Pods-HalftimePickTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,7 +310,6 @@
 			isa = PBXGroup;
 			children = (
 				CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */,
-				CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */,
 				CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */,
 				CA1A0F9229C6EAAE009C93C5 /* sportsCell.swift */,
 			);
@@ -326,7 +321,6 @@
 			children = (
 				CAF7D92F29B4729F009CE22D /* SportsDetailViewController.swift */,
 				CAEBB1F729BC924C00CF3958 /* customview.swift */,
-				CAEBB1FD29BCB5FF00CF3958 /* TopNewsTableViewCell.swift */,
 				CA1CC60729C24ACF00B45DF1 /* NewsDetailTableViewCell.swift */,
 			);
 			path = SportsDetail;
@@ -602,7 +596,6 @@
 				CABEF2C72998EB5B00751299 /* HomeViewController.swift in Sources */,
 				CA1CC60429C2476800B45DF1 /* ProductCell.swift in Sources */,
 				CA9F81F229C885B300703224 /* livegame.swift in Sources */,
-				CAEBB1FE29BCB5FF00CF3958 /* TopNewsTableViewCell.swift in Sources */,
 				CAA4F2FA29B3816C00D8252F /* CompositionalLayout.swift in Sources */,
 				CABEF2D529996E5700751299 /* appbar.swift in Sources */,
 				CAAE6E94299B75F800BC6EF2 /* gamelistTableViewCell.swift in Sources */,
@@ -618,7 +611,6 @@
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,
 				CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */,
 				CA1CC60329C2476800B45DF1 /* Product.swift in Sources */,
-				CADFD29929AE5BE100BE2C57 /* SportsCollectionViewCell.swift in Sources */,
 				CABEF2CB2998EBB000751299 /* NewsViewController.swift in Sources */,
 				CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */,
 				CABEF2C32998E87B00751299 /* TabBarController.swift in Sources */,

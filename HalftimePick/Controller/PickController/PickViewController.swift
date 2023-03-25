@@ -1,9 +1,8 @@
 //
-//  ViewController.swift
-//  Sample_TableView
+//  SportsCollectionViewCell.swift
+//  HalftimePick
 //
-//  Created by Esat Kemal Ekren on 5.04.2018.
-//  Copyright © 2018 Esat Kemal Ekren. All rights reserved.
+//  Created by Maruf Khan on 28/2/23.
 //
 
 import UIKit

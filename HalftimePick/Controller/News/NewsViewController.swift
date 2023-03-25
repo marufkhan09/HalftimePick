@@ -310,9 +310,7 @@ extension NewsViewController {
         view.addSubview(collectionView)
         collectionView.frame = view.bounds
     }
-    
-    
-    
+  
 }
 
 
