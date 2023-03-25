@@ -61,22 +61,15 @@ class SportsListViewController: UIViewController, UICollectionViewDelegate, UICo
         //item
         let fitem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .fractionalHeight(1), spacing: 1)
         let item = CompositionalLayout.createItem(width: .fractionalWidth(0.5), height: .fractionalHeight(1), spacing: 1)
-        
         //margin
         let verticalGroup = CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(0.5), height: .fractionalHeight(1), item: fitem, count: 2)
-        
         //group
         let horizontalGroup = CompositionalLayout.createGroup(alignment: .horizontal, width: .fractionalWidth(1), height: .absolute(200), items: [item,verticalGroup])
-        
         let mainItem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .absolute(200), spacing: 1)
         let mainGroup =  CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(1), height: .absolute(400), items: [mainItem,horizontalGroup])
-        
-      
         //section
         let section = NSCollectionLayoutSection(group: mainGroup)
         //return
         return UICollectionViewCompositionalLayout(section: section)
-    
-       
     }
 }

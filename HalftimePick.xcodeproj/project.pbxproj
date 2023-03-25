@@ -15,6 +15,8 @@
 		CA1CC60529C2476800B45DF1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60129C2476800B45DF1 /* Extension.swift */; };
 		CA1CC60629C2476800B45DF1 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60229C2476800B45DF1 /* PickViewController.swift */; };
 		CA1CC60829C24ACF00B45DF1 /* NewsDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1CC60729C24ACF00B45DF1 /* NewsDetailTableViewCell.swift */; };
+		CA46DE6D29CC5A6600627B4E /* newsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA46DE6C29CC5A6600627B4E /* newsListView.swift */; };
+		CA5C694629CB0F2A000CF797 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C694529CB0F2A000CF797 /* NewsCollectionViewCell.swift */; };
 		CA7D6DFC299CAC1D0002DC30 /* homeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6DFB299CAC1C0002DC30 /* homeApi.swift */; };
 		CA7D6DFF299CAC6C0002DC30 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6DFE299CAC6C0002DC30 /* HomeModel.swift */; };
 		CA7D6E02299CF7E20002DC30 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */; };
@@ -75,6 +77,8 @@
 		CA1CC60129C2476800B45DF1 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CA1CC60229C2476800B45DF1 /* PickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		CA1CC60729C24ACF00B45DF1 /* NewsDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CA46DE6C29CC5A6600627B4E /* newsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsListView.swift; sourceTree = "<group>"; };
+		CA5C694529CB0F2A000CF797 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA7D6DFB299CAC1C0002DC30 /* homeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeApi.swift; sourceTree = "<group>"; };
 		CA7D6DFE299CAC6C0002DC30 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		CA7D6E00299CF7E20002DC30 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +147,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA5C694429CB0EDE000CF797 /* newslist */ = {
+			isa = PBXGroup;
+			children = (
+				CA5C694529CB0F2A000CF797 /* NewsCollectionViewCell.swift */,
+				CA46DE6C29CC5A6600627B4E /* newsListView.swift */,
+			);
+			path = newslist;
+			sourceTree = "<group>";
+		};
 		CA7D6DFA299CABEA0002DC30 /* NetworkCalls */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +272,7 @@
 		CABEF2C82998EB8400751299 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				CA5C694429CB0EDE000CF797 /* newslist */,
 				CADFD7DF29C0982100EEA16D /* StoryCollectionViewCell.swift */,
 				CABEF2CA2998EBB000751299 /* NewsViewController.swift */,
 				CA9F81F129C885B300703224 /* livegame.swift */,
@@ -299,9 +313,9 @@
 		CABF198A29A5E48E0048BE2C /* SportsList */ = {
 			isa = PBXGroup;
 			children = (
-				CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */,
 				CABF198B29A5E4BC0048BE2C /* SportsListViewController.swift */,
 				CADFD29829AE5BE100BE2C57 /* SportsCollectionViewCell.swift */,
+				CAA4F2F929B3816C00D8252F /* CompositionalLayout.swift */,
 				CA1A0F9229C6EAAE009C93C5 /* sportsCell.swift */,
 			);
 			path = SportsList;
@@ -596,7 +610,9 @@
 				CA1A0F9329C6EAAE009C93C5 /* sportsCell.swift in Sources */,
 				CABF198C29A5E4BC0048BE2C /* SportsListViewController.swift in Sources */,
 				CAEBB1F829BC924C00CF3958 /* customview.swift in Sources */,
+				CA46DE6D29CC5A6600627B4E /* newsListView.swift in Sources */,
 				CA7D6DFC299CAC1D0002DC30 /* homeApi.swift in Sources */,
+				CA5C694629CB0F2A000CF797 /* NewsCollectionViewCell.swift in Sources */,
 				CABEF2952998CEF900751299 /* ViewController.swift in Sources */,
 				CA8CC7C129A38D66006054EB /* CustomSegmentedControl.swift in Sources */,
 				CABEF2912998CEF900751299 /* AppDelegate.swift in Sources */,

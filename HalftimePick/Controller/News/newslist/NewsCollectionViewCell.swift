@@ -1,14 +1,15 @@
 //
-//  SportsCollectionViewCell.swift
+//  NewsCollectionViewCell.swift
 //  HalftimePick
 //
-//  Created by Maruf Khan on 28/2/23.
+//  Created by Maruf Khan on 22/3/23.
 //
+
 
 import UIKit
 
-class sportsCell: UICollectionViewCell {
-    static let identifier = "sportsCell"
+class NewsCollectionViewCell: UICollectionViewCell {
+    static let identifier = "NewsCollectionViewCell"
     
     private lazy var cView: UIView = {
         let view = UIView()

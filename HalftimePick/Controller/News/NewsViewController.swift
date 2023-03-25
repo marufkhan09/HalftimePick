@@ -10,10 +10,7 @@ import UIKit
 
 class NewsViewController : UIViewController {
     var myCollectionView:UICollectionView?
-   // var livescore : [Livescore]  = [Livescore]()
-
-
-    
+    private var newscollectionView  : UICollectionView?
     var livescore : Livescore? {
         didSet {
             team1Label.text = livescore?.team1
@@ -29,9 +26,7 @@ class NewsViewController : UIViewController {
             upteam2Image.image = livescore?.upcomingTeam2img
             upcominggame.text = livescore?.upcomingGame
             upcominggametime.text = livescore?.upcomingMTime
-            
-            
-            
+ 
         }
     }
     
@@ -54,28 +49,39 @@ class NewsViewController : UIViewController {
         myCollectionView?.dataSource = self
         myCollectionView?.delegate = self
         myCollectionView?.backgroundColor = .black
-        //
-        //      5
-        //      let gradientLayer = CAGradientLayer()
-        //      gradientLayer.frame = view.bounds
-        //      gradientLayer.colors = [UIColor.red.cgColor, UIColor.red.cgColor, UIColor.blue.cgColor, UIColor.blue.cgColor]
-        //      gradientLayer.locations = [NSNumber(value: 0.0), NSNumber(value: 0.5), NSNumber(value: 0.5), NSNumber(value: 1.0)]
-        //      view.layer.addSublayer(gradientLayer)
-        
         self.view.setNeedsLayout()
         view.addSubview(myCollectionView ?? UICollectionView())
         view.addSubview(horizontaldivider)
         view.addSubview(cv)
         horizontaldivider.anchor(top: myCollectionView!.bottomAnchor, left: myCollectionView?.leftAnchor, bottom: nil, right: myCollectionView?.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0.5, enableInsets: false)
         
+        view.addSubview(newslistview)
+        view.addSubview(nView)
+        
         cv.anchor(top: horizontaldivider.bottomAnchor, left: horizontaldivider.leftAnchor, bottom: nil, right: horizontaldivider.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width:0, height: 80, enableInsets: false)
         setupLiveGameView()
+       
+        nView.anchor(top: cv.bottomAnchor, left: cv.leftAnchor, bottom: nil, right: cv.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width:0, height: 500, enableInsets: false)
+
+        
         self.view = view
     }
+
 
     private lazy var cv: UIView = {
         let view = UIView()
         view.backgroundColor = .black
+        
+
+        return view
+    }()
+    let nView: newsListView = {
+        let view = newsListView()
+        return view
+    }()
+    private lazy var newslistview: UIView = {
+        let view = UIView()
+        view.backgroundColor = .gray
         
 
         return view
@@ -196,6 +202,7 @@ class NewsViewController : UIViewController {
     }()
     
     
+    
     func setupLiveGameView(){
         
         cv.addSubview(team1Image)
@@ -274,6 +281,43 @@ extension NewsViewController: UICollectionViewDelegate {
         print("User tapped on item \(indexPath.row)")
     }
 }
+extension NewsViewController {
+    static func createLayout() -> UICollectionViewCompositionalLayout{
+        //item
+        let fitem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .fractionalHeight(1), spacing: 1)
+        let item = CompositionalLayout.createItem(width: .fractionalWidth(0.5), height: .fractionalHeight(1), spacing: 1)
+        //margin
+        let verticalGroup = CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(0.5), height: .fractionalHeight(1), item: fitem, count: 2)
+        //group
+        let horizontalGroup = CompositionalLayout.createGroup(alignment: .horizontal, width: .fractionalWidth(1), height: .absolute(200), items: [item,verticalGroup])
+        let mainItem = CompositionalLayout.createItem(width: .fractionalWidth(1), height: .absolute(200), spacing: 1)
+        let mainGroup =  CompositionalLayout.createGroup(alignment: .vertical, width: .fractionalWidth(1), height: .absolute(400), items: [mainItem,horizontalGroup])
+        //section
+        let section = NSCollectionLayoutSection(group: mainGroup)
+        //return
+        return UICollectionViewCompositionalLayout(section: section)
+    }
+ 
+    func setupNewsCollectionView(){
+        newscollectionView = UICollectionView(frame: .zero,collectionViewLayout: NewsViewController.createLayout())
+        newscollectionView?.backgroundColor = .black
+        newscollectionView?.delegate = self
+        newscollectionView?.dataSource = self
+        newscollectionView?.register(sportsCell.self, forCellWithReuseIdentifier: sportsCell.identifier)
+        guard let collectionView = newscollectionView else {
+            return
+        }
+        view.addSubview(collectionView)
+        collectionView.frame = view.bounds
+    }
+    
+    
+    
+}
+
+
+
+
 
 
 
