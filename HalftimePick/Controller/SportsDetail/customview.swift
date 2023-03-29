@@ -110,8 +110,6 @@ final class DetailView: UIView{
   setuphedlineLabelConstraints()
       setupDescriptionLabelConstraints()
        // setupTableView()
-        
-        
     }
     
     private func setupScrollViewContstraints() {
